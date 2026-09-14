@@ -1,0 +1,51 @@
+{
+  "id": "com.3seq.stremio",
+  "version": "1.0.0",
+  "name": "3seq - قصة عشق",
+  "description": "Addon Stremio officiel pour les contenus autorisés de u.3seq.cam (séries et films).",
+  "logo": "https://u.3seq.cam/wp-content/uploads/2025/04/logo.png",
+  "background": "https://u.3seq.cam/wp-content/uploads/2025/04/logo.png",
+  "types": ["series", "movie"],
+  "resources": [
+    {
+      "name": "catalog",
+      "types": ["series", "movie"],
+      "idPrefixes": ["3seq:"]
+    },
+    {
+      "name": "meta",
+      "types": ["series", "movie"],
+      "idPrefixes": ["3seq:"]
+    },
+    {
+      "name": "stream",
+      "types": ["series", "movie"],
+      "idPrefixes": ["3seq:"]
+    }
+  ],
+  "catalogs": [
+    {
+      "type": "series",
+      "id": "3seq-series",
+      "name": "3seq - أحدث المسلسلات",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "3seq-movies",
+      "name": "3seq - أحدث الأفلام",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "idPrefixes": ["3seq:"]
+}
