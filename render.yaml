@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: 3seq-stremio-addon
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: BASE_URL
+        sync: false
+      - key: PORT
+        value: "10000"
+    autoDeploy: yes
